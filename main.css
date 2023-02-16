@@ -1,17 +1,31 @@
 body {
-    font-family: monospace;
+    text-align: center;
+    font-size: 20px;
 }
 ul {
     font-family: Helvetica;
 }
 li {
     list-style: circle;
+    list-style-position: inside;
+    font-family: 'fina';
 }
 .list{
     list-style: square;
+    list-style-position: inside;
+    text-align: center;
+    font-family: 'fina';
 }
+
 #msg {
-    font-family: monospace;
+    
+    font-family: 'regular';
+    font-size: 25px;
+}
+
+h1 {
+    font-family: 'cake';
+    font-size: 65px;
 }
 
 .light-theme {
@@ -27,11 +41,25 @@ li {
     --btnBg: var(--white);
     --btnFontColor: var(--black);
 }
+@font-face {
+    font-family: 'regular';
+    src: url(NexaText-Trial-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'fina';
+    src: url(NexaText-Trial-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'cake';
+    src: url(Cream\ Cake.otf);
+}
 
 :root {
-    --green: #00FF00;
-    --white: #FFFFFF;
-    --black: #000000;
+    --green: #628562;
+    --white: #e7e7e7;
+    --black: #181818;
 }
 
 * {
@@ -44,14 +72,17 @@ body {
 }
 
 .btn {
+    font-family: 'regular';
     position:absolute;
-    top: 20px;
-    left: 325px;
-    height: 50px;
-    width: 50px;
+    top: 335px;
+    left: 660px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     border: none;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+    font-size: 20px;
+    
 }
     .btn:focus { outline-style: none; }
