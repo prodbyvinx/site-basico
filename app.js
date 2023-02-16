@@ -13,3 +13,16 @@ switcher.addEventListener('click', function() {
     }
     console.log('current class name: ' + className);
 });
+    function logar(){
+
+        var Login = document.getElementById('Login').value;
+        var Senha = document.getElementById('Senha').value;
+
+        if(Login == "admin" && Senha == "admin"){
+            alert('Sucesso!');
+            location.href = "index2.html";
+        }else{
+            alert('Usuário ou senha incorretos.')
+        }
+
+    }

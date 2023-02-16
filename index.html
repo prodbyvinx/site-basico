@@ -9,8 +9,8 @@
         <h1>Lista de Tarefas</h1>
         <p id="msg">Tarefas Atuais:</p>
         <ul>
-            <li class="list">Adicione estilos visuais</li>
-            <li class="list">Adicione temas claro e escuro</li>
+            <li>Adicione estilos visuais</li>
+            <li>Adicione temas claro e escuro</li>
             <li>Ative a troca de temas</li>
         </ul>
         
@@ -20,13 +20,15 @@
 
         <script src="app.js"></script>
         <noscript>Você precisa ativar o JavaScript para visualizar o site completo.</noscript>
+
         <form>
-
-            <h2 class="entrar">Entrar</h2>
-            <input type="text" placeholder="Login" id="Login">
-            <input type="password" placeholder="Senha" id="Senha">
-            <input type="submit" class="submit">
-
+            <div class="tela-login">
+                <h2 class="entrar">Entrar</h2>
+                <input type="text" placeholder="Login" id="Login">
+                <input type="password" placeholder="Senha" id="Senha">
+                <button type="button" id="submit" onclick="logar(); return false">Entrar</button></a>
+            </div>
         </form>
+
     </body>
 </html>

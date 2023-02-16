@@ -10,14 +10,8 @@ li {
     list-style-position: inside;
     font-family: 'fina';
 }
-.list{
-    list-style: square;
-    list-style-position: inside;
-    font-family: 'fina';
-}
 
 #msg {
-    
     font-family: 'regular';
     font-size: 25px;
 }
@@ -90,6 +84,10 @@ body {
 }
     .btn:focus { outline-style: none; }
 
+    .tela-login {
+        margin-top: -275px;
+    }
+
     h2 {
         font-family: 'regular';
         box-sizing: border-box;
@@ -105,8 +103,8 @@ body {
 
     input {
         display: block;
-        width: 230px;
-        height: 20px;
+        width: 240px;
+        height: 30px;
         margin: 10px;
         border-radius: 10px;
         border: none;
@@ -114,21 +112,29 @@ body {
         font-family: Helvetica;
     }
 
-    .submit {
-        width: 60px;
-        height: 30px;
-        margin-left: 95px;
+    #submit {
+        width: 70px;
+        height: 40px;
         border-radius: 15px;
         border: none;
         position: absolute;
         color: var(--loginFontColor);
         background-color: var(--loginBg);
         font-family: 'fina';
+        font-size: 14px;
     }
 
 .submit:focus { outline-style: none; }
 
     .entrar {
         margin: 10px;
-        margin-left: 22px;
+        margin-left: 33px;
+    }
+
+    #Login {
+        font-size: 13px;
+    }
+
+    #Senha {
+        font-size: 13px;
     }
