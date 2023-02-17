@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'regular';
+    src: url(NexaText-Trial-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'fina';
+    src: url(NexaText-Trial-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'cake';
+    src: url(Cream\ Cake.otf);
+}
+
 body {
     font-size: 20px;
     text-align: center;
@@ -37,20 +52,6 @@ h1 {
     --btnFontColor: var(--black);
     --loginBg: var(--white);
     --loginFontColor: var(--black);
-}
-@font-face {
-    font-family: 'regular';
-    src: url(NexaText-Trial-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'fina';
-    src: url(NexaText-Trial-Thin.ttf);
-}
-
-@font-face {
-    font-family: 'cake';
-    src: url(Cream\ Cake.otf);
 }
 
 :root {

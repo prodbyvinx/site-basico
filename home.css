@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'garet';
+    src: url(Garet-Book.ttf);
+}
+
+@font-face {
+    font-family: 'bohemiansoul';
+    src: url(Bohemian\ Soul.otf);
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(NexaText-Trial-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'fina';
+    src: url(NexaText-Trial-Thin.ttf);
+}
+
+.light-theme {
+    --bg: var(--white);
+    --leftBg: var(--lightestpink);
+    --fontColor: var(--black);
+    --btnBg: var(--lightestpink);
+    --headerBg: var(--darkpink);
+    --headerFontColor: var(--white);
+    --navBarBg: var(--lightpink);
+    --navBarHover: var(--lightestpink);
+    --footerBg: var(--lightestpink);
+    --footerFontColor: var(--black);
+    --sideBg: var(--lightestpink);
+    --sideFontColor: var(--black);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --leftBg: var(--lightestpink);
+    --fontColor: var(--white);
+    --btnBg: var(--lightestpink);
+    --headerBg: var(--darkpink);
+    --headerFontColor: var(--black);
+    --navBarBg: var(--lightpink);
+    --navBarHover: var(--lightestpink);
+    --footerBg: var(--lightestpink);
+    --footerFontColor: var(--white);
+    --sideBg: var(--lightestpink);
+    --sideFontColor: var(--white);
+}
+
+:root {
+    --lightestpink: #f1e5f1;
+    --lightpink: #d1bed0;
+    --white: #e7e7e7;
+    --black: #181818;
+    --darkpink: #734871;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+/* Estilo do Body*/
+
+body {
+    font-family: 'garet';
+    margin: 0;
+}
+
+/* Estilo da logo e cabeçalho */
+
+.header{
+    padding: 20px;
+    text-align: center;
+    background: var(--headerBg);
+    color: var(--headerFontColor);
+    font-family: 'bohemiansoul';
+}
+
+.titulo{
+    font-family: 'bohemiansoul';
+}
+
+/* Tamanho da fonte do header */
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden; /* Esconde o resto do texto */
+    background-color: var(--navBarBg);
+}
+
+/* Estilo da barra de navegação de links */
+
+.navbar a {
+    float: left;
+    display: block;
+    color: var(--navBarBg);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Estilo dos links à direita */
+
+.navbar a.right {
+    float: right;
+}
+
+.img-right {
+    width: 20px;
+    height: 20px;
+    width: 100%;
+}
+
+.img-left {
+    width: 20px;
+    height: 20px;
+    width: 100%;
+}
+
+/* Hover muda a cor quando passa o mouse */
+.navbar a:hover {
+    background-color: var(--navBarHover);
+    color: var(--fontColor);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Wrap faz com que as box não se amassem */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.row h2{
+    font-family: 'regular';
+}
+
+/* Criação de 2 colunas */
+/* Coluna da esquerda */
+.side {
+    flex: 30%;
+    background-color: var(--lightestpink);
+    padding: 20px;
+}
+
+/* Coluna Principal */
+.main {
+    flex: 70%;
+    background-color: var(--bg);
+    padding: 20px;
+    text-align: center;
+
+}
+
+/* Imagens */
+.img {
+    background-color: var(--headerBg);
+    width: 100%;
+    padding: 10px;
+    height: 230px;
+    width: 230px;
+}
+
+.img-main {
+    background-color: var(--headerBg);
+    width: 100%;
+    padding: 10px;
+    height: 230px;
+    width: 230px;
+    margin: auto;
+}
+
+/* Rodapé */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--lightestpink);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-title{
+    font-family: 'bohemiansoul';
+}
+
+/* Layout Responsivo */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
