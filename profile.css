@@ -18,6 +18,10 @@
     src: url(NexaText-Trial-Thin.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .light-theme {
     --bg: var(--white);
     --leftBg: var(--lightestpink);
@@ -27,7 +31,7 @@
     --headerFontColor: var(--white);
     --navBarBg: var(--lightpink);
     --navBarHover: var(--lightestpink);
-    --footerBg: #69554e;
+    --footerBg: var(--lightestpink);
     --footerFontColor: var(--black);
     --sideBg: var(--lightestpink);
     --sideFontColor: var(--black);
@@ -51,31 +55,26 @@
 :root {
     --lightestpink: #f1e5f1;
     --lightpink: #d1bed0;
-    --white: #fbe3ff;
+    --white: #e7e7e7;
     --black: #181818;
-    --darkpink: #ffc7f5;
+    --darkpink: #734871;
 }
-
-* {
-    box-sizing: border-box;
-}
-  
-/* Estilo do Body*/
 
 body {
     font-family: 'garet';
     margin: 0;
+    padding: 0;
+    background-color: var(--white);
 }
 
 /* Estilo da logo e cabeçalho */
 
 .header{
-    padding: 1px;
+    padding: 20px;
     text-align: center;
     background: var(--headerBg);
     color: var(--headerFontColor);
     font-family: 'bohemiansoul';
-    height: 160px;
 }
 
 .titulo{
@@ -85,12 +84,12 @@ body {
 /* Tamanho da fonte do header */
 
 .header h1 {
-    font-size: 10px;
+    font-size: 40px;
 }
 
 .navbar {
     overflow: hidden; /* Esconde o resto do texto */
-    background-color: #69554e;
+    background-color: var(--navBarBg);
 }
 
 /* Estilo da barra de navegação de links */
@@ -136,60 +135,6 @@ body {
 
 .row h2{
     font-family: 'regular';
-}
-
-/* Criação de 2 colunas */
-/* Coluna da esquerda */
-.side {
-    flex: 30%;
-    background-color: var(--bg);
-    padding: 20px;
-    font-weight: 600;
-}
-
-/* Coluna Principal */
-.main {
-    flex: 70%;
-    background-color: var(--bg);
-    padding: 20px;
-    text-align: center;
-    font-weight: 600;
-}
-
-/* Imagens */
-.img {
-    background-color: var(--headerBg);
-    width: 100%;
-    padding: 10px;
-    height: 230px;
-    width: 230px;
-}
-
-.img-main {
-    background-color: var(--headerBg);
-    width: 100%;
-    padding: 10px;
-    height: 230px;
-    width: 230px;
-    margin: auto;
-}
-
-/* Rodapé */
-.footer {
-    height: 145px;
-    padding: 20px;
-    text-align: center;
-    background: #69554e;
-    font-family: 'garet';
-}
-
-.footer-title{
-    font-family: 'bohemiansoul';
-    color: var(--white);
-}
-
-.footer-info{
-    color: var(--white);
 }
 
 /* Layout Responsivo */

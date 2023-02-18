@@ -13,31 +13,19 @@
     src: url(Cream\ Cake.otf);
 }
 
-body {
-    font-size: 20px;
-    text-align: center;
-}
-ul {
-    font-family: Helvetica;
-}
-li {
-    list-style: square;
-    list-style-position: inside;
-    font-family: 'fina';
+@font-face {
+    font-family: 'garet';
+    src: url(Garet-Book.ttf);
 }
 
-#msg {
-    font-family: 'regular';
-    font-size: 25px;
-}
-
-h1 {
-    font-family: 'cake';
-    font-size: 65px;
+@font-face {
+    font-family: 'bohemiansoul';
+    src: url(Bohemian\ Soul.otf);
 }
 
 .light-theme {
-    --bg: var(--green);
+    --bg: var(--lightestpink);
+    --bgLogin: var(--altwhite);
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
@@ -55,87 +43,87 @@ h1 {
 }
 
 :root {
-    --green: #628562;
-    --white: #e7e7e7;
+    --altwhite: #f1f1f1bd;
+    --lightestpink: #f1e5f1;
+    --lightpink: #d1bed0;
+    --white: #f1f1f1;
     --black: #181818;
-}
-
-* {
-    color: var(--fontColor);
-    font-family: Helvetica;
+    --darkpink: #734871;
 }
 
 body {
-    background: var(--bg);
+    font-family: 'garet';
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top left, rgb(255, 232, 130),#f0caf0,#d47dba, #5e3286);
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg);
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--altwhite);
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 6px 6px 32px rgba(0, 0, 0, 0.4);
+    gap: 10px;
+}
+
+.formLogin h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 5vh;
+    font-family: 'regular';
+}
+
+.formLogin p {
+    display: inline-block;
+    font-size: 2.3vh;
+    color: var(--fontColor);
+    margin-bottom: 30px;
+}
+
+.formLogin input {
+    padding: 9px;
+    font-size: 1.8vh;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+    font-family: 'garet';
+}
+
+.formLogin input:focus {
+    border: 1px solid rgb(61, 0, 53);
 }
 
 .btn {
-    font-family: 'regular';
-    position:absolute;
-    top: 335px;
-    left: 660px;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
+    margin: auto;
+    height: 40px;
+    width: 70px;
+    background-color: rgb(126, 71, 123);
+    color: var(--white);
+    font-size: 2.3vh;
+    font-family: 'garet';
+    font-weight: 700;
     border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
-    font-size: 20px;
-    
+    border-radius: 8px;
+    margin-top: 5px;
+    cursor: pointer;
 }
-    .btn:focus { outline-style: none; }
 
-    .tela-login {
-        margin-top: -275px;
-    }
-
-    h2 {
-        font-family: 'regular';
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-
-    form {
-        width: 200px;
-        margin: 20px;
-    }
-
-    input {
-        display: block;
-        width: 240px;
-        height: 30px;
-        margin: 10px;
-        border-radius: 10px;
-        border: none;
-        font-size: 2px;
-        font-family: Helvetica;
-    }
-
-    #submit {
-        width: 70px;
-        height: 40px;
-        border-radius: 15px;
-        border: none;
-        position: absolute;
-        color: var(--loginFontColor);
-        background-color: var(--loginBg);
-        font-family: 'fina';
-        font-size: 14px;
-    }
-
-.submit:focus { outline-style: none; }
-
-    .entrar {
-        margin: 10px;
-        margin-left: 33px;
-    }
-
-    #Login {
-        font-size: 13px;
-    }
-
-    #Senha {
-        font-size: 13px;
-    }
+.btn:hover {
+    background-color: rgb(70, 39, 68);
+}

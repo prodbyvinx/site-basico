@@ -15,14 +15,14 @@ switcher.addEventListener('click', function() {
 });
     function logar(){
 
-        var Login = document.getElementById('Login').value;
-        var Senha = document.getElementById('Senha').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
 
-        if(Login == "admin" && Senha == "admin"){
+        if(email == "admin@admin.com" && password == "admin"){
             alert('Sucesso!');
-            location.href = "index2.html";
+            location.href = "index2.html"
         }else{
-            alert('Usuário ou senha incorretos.')
+            alert('E-mail ou senha incorretos.');
         }
 
     }
