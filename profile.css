@@ -29,9 +29,9 @@
     --btnBg: var(--lightestpink);
     --headerBg: var(--darkpink);
     --headerFontColor: var(--white);
-    --navBarBg: var(--lightpink);
+    --navBarBg: #69554e;
     --navBarHover: var(--lightestpink);
-    --footerBg: var(--lightestpink);
+    --footerBg: #69554e;
     --footerFontColor: var(--black);
     --sideBg: var(--lightestpink);
     --sideFontColor: var(--black);
@@ -55,26 +55,27 @@
 :root {
     --lightestpink: #f1e5f1;
     --lightpink: #d1bed0;
-    --white: #e7e7e7;
+    --white: #fbe3ff;
     --black: #181818;
-    --darkpink: #734871;
+    --darkpink: #ffc7f5;
 }
 
 body {
     font-family: 'garet';
     margin: 0;
     padding: 0;
-    background-color: var(--white);
+    background-color: var(--lightestpink);
 }
 
 /* Estilo da logo e cabeçalho */
 
 .header{
-    padding: 20px;
+    padding: 1px;
     text-align: center;
     background: var(--headerBg);
     color: var(--headerFontColor);
     font-family: 'bohemiansoul';
+    height: 160px;
 }
 
 .titulo{
@@ -84,7 +85,7 @@ body {
 /* Tamanho da fonte do header */
 
 .header h1 {
-    font-size: 40px;
+    font-size: 10px;
 }
 
 .navbar {
@@ -136,6 +137,44 @@ body {
 .row h2{
     font-family: 'regular';
 }
+
+.perfil-main {
+    background-color: var(--lightestpink);
+    text-align: center;
+    height: auto;
+    margin: 30px;
+    font-family: 'garet';
+    font-size: small;
+}
+
+.perfil-main img{
+    border-radius: 50%;
+}
+
+.infoPerfil {
+    margin-top: 25px;
+    border: 2px solid var(--black); border-bottom: none; height: auto;
+    border-radius: 25px;
+}
+
+/* Rodapé */
+.footer {
+    height: 145px;
+    padding: 20px;
+    text-align: center;
+    background: #69554e;
+    font-family: 'garet';
+}
+
+.footer-title{
+    font-family: 'bohemiansoul';
+    color: var(--white);
+}
+
+.footer-info{
+    color: var(--white);
+}
+
 
 /* Layout Responsivo */
 @media screen and (max-width: 700px) {

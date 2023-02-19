@@ -18,6 +18,11 @@
     src: url(NexaText-Trial-Thin.ttf);
 }
 
+@font-face {
+    font-family: 'cake';
+    src: url(Cream\ Cake.otf);
+}
+
 .light-theme {
     --bg: var(--white);
     --leftBg: var(--lightestpink);
@@ -51,7 +56,7 @@
 :root {
     --lightestpink: #f1e5f1;
     --lightpink: #d1bed0;
-    --white: #fbe3ff;
+    --white: #fdf4ff;
     --black: #181818;
     --darkpink: #ffc7f5;
 }
@@ -135,7 +140,10 @@ body {
 }
 
 .row h2{
-    font-family: 'regular';
+    font-family: 'cake';
+    font-size: 40px;
+    font-weight: 100;
+    color: #241d1b;
 }
 
 /* Criação de 2 colunas */
@@ -145,6 +153,19 @@ body {
     background-color: var(--bg);
     padding: 20px;
     font-weight: 600;
+    border-right: 2px solid #69554e; height: auto;
+}
+
+.sideTitle {
+    margin-left: 28px;
+}
+
+.p1 {
+    margin-left: 45px;
+}
+
+.p2 {
+    margin-left: 33px;
 }
 
 /* Coluna Principal */
@@ -169,8 +190,17 @@ body {
     background-color: var(--headerBg);
     width: 100%;
     padding: 10px;
-    height: 230px;
-    width: 230px;
+    height: 392px;
+    width: 392px;
+    margin: auto;
+}
+
+.img-main2 {
+    background-color: var(--headerBg);
+    width: 100%;
+    padding: 10px;
+    height: 392px;
+    width: 452px;
     margin: auto;
 }
 
@@ -193,11 +223,16 @@ body {
 }
 
 /* Layout Responsivo */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 923px) {
     .row {
         flex-direction: column;
         text-align: center;
         align-items: center;
+    }
+
+    .side {
+        border: none;
+        text-align: center;
     }
 }
 
